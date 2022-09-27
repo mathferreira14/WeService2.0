@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+<body>
+    <header id="header">
+        <img id="logo" src="../assets/WSLogo.png" alt="WeService Logo">
+        <nav id="menu">
+            <button id="btn-mobile">
+                <div id="circle">
+                    <span id="btn"></span>
+                </div>  
+            </button>
+            <ul id="lista">
+                <div id="home"><li id="fix"><a href="../index.html">Home</a></li></div>
+                <div id="dicon"><li id="icon"><a href="../index.html"><img src="../assets/home.png" alt=""></a></li></div>
+                <div><li id="fix"><a href="./work.html">Como Funciona</a></li></div>
+                <div><li id="fix"><a href="./prices.html">Preços</a></li></div>
+                <div><li id="fix"><a href="./gold.html">Compre Gold</a></li></div>
+                <div><li id="fix"><a href="./contact.html">Contato</a></li></div>
+            </ul>
+        </nav>
+    </header>
+<img id="bg" src="../assets/bgv2.jpg" alt="">
+<img id="bg2" src="../assets/bg4.png" alt="">
+<div id="container">
+    <div id="box">
+        <h1>Como Funciona</h1>
+    <ul>
+        <li>Serviço feito via Acesso Remoto ou Usuário/Senha</li>
+        <li>Após o Início do serviço, o dono da conta NÃO PODE jogar até o termino do serviço.</li>
+        <li>Jogamos na sala e praça que o dono da conta escolher, sem acréscimo de valor.</li>
+        <li>Não utilizamos nenhum tipo de programas de terceiros durante os serviços, evitando assim eventuais banimentos.</li>
+        <li>Caso seja necessário, efetuar checkin no Discord ou liberar acesso ao mesmo.</li>
+    </ul>
+    <img src="../assets/lanceiro.png" alt="">  
+    </div>
+</div>
+<script>
+    const btnMobile = document.getElementById('btn-mobile');
+   
+    function toggleMenu(event) {    
+        if (event.type === "touchstart") event.preventDefault ();
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+    }
+
+    btnMobile.addEventListener('click', toggleMenu);
+    btnMobile.addEventListener('touchstart', toggleMenu);
+</script>
+
+</body>
+</html>
