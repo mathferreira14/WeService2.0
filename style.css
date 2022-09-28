@@ -121,7 +121,7 @@ div {
 /***** work ******/ 
 
 
-#container, #container2 {
+#container, #container2, #container3, #container4 {
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -137,7 +137,7 @@ div {
     
 }
 
-#box, #box2 {
+#box, #box2, #box3, #box4 {
     
     width: 350px;
     height: 350px;
@@ -223,7 +223,116 @@ h1 {
     right: 110px;
 }
 
+/********** Gold ************/
 
+#goldh1 {
+    padding: 16px;
+}
+
+#goldlist li img {
+    max-height: 50px;
+    width: 30px;
+    padding: 6px;
+    margin-left: 12px;
+    top: 8px;
+    position: relative;
+}
+
+#goldlist li {
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
+    list-style: none;
+    text-align: left;
+    margin-left: 20px;
+}
+
+#arq {
+    position: relative;
+    bottom: 130px;
+    left: -70px;
+}
+
+
+/************* Contact *************/
+
+#wpp {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style:none;
+    text-align: center;
+    margin-left: 10px;
+    
+}
+
+#wpp img {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+#disc img {
+    width: 60px;
+    height: 60px;
+    padding: 4px;
+    margin-left: 8px;
+    gap: 10px;
+    position: relative;
+    left: -18px;
+    bottom: -20px;
+}
+
+#disc li {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    list-style: none;
+    position: relative;
+    left: 26px;
+    bottom: 10px;
+}
+
+
+#p1 {
+    font-size: 24px;
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+    position: relative;
+    font-family: 'Passions Conflict', cursive;
+    top: -237px;
+    left: 167px;
+    margin-top: -6px;   
+}
+
+#p2 {
+    font-size: 20px;
+    color: white;
+    font-family: cursive;
+    font-style: italic;
+    position: relative;
+    font-family: 'Passions Conflict', cursive;
+    top: -108px;
+    left: 152px;
+}
+
+#tao {
+    position: relative;
+    top: -190px;
+    left: 260px;
+}
+
+/********** Footer *************/
+
+footer {
+    color: white;
+    font-size: 20px;
+    font-family: 'Passions Conflict', cursive;
+    text-align: center;
+}
 /****************************** Animations *********************************/
 
 
@@ -439,7 +548,7 @@ header li {
 
 /* work */
 
-#container, #container2 {
+#container, #container2, #container3, #container4 {
     left: 90px;
     max-width: 250px;
     max-height: 450px;
@@ -450,13 +559,13 @@ header li {
     animation: fromtop .6s .6s backwards, bgColor 3s infinite linear; 
 }
 
-#box, #box2 {
+#box, #box2, #box3, #box4 {
     max-width: 240px;
     max-height: 440px;
    
 }
 
-#container li, #container2 li {
+#container li, #container2 li, #container3 li, #container4 li {
     font-size: 12px;
     list-style: none;
 }
@@ -472,5 +581,28 @@ header li {
 
 }
 
+#wpp img {
+    max-width: 92px;
+    max-height: 92px;
+}
+
+#wpp {
+    margin-top: 20px;
+}
+
+#disc img {
+    max-width: 40px;
+    max-height: 40px;
+
+}
+
+#tao {
+    left: 140px;
+    top: -80px;
+}
+
+#p1, #p2 {
+    display: none;
+}
 
 }
