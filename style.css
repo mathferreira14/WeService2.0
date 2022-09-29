@@ -412,6 +412,8 @@ footer {
     top: 110px;
     right: 0px;
     flex-direction: column;
+    gap: 0px;
+    z-index: 1001;
     
 }
 
